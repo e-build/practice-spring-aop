@@ -1,12 +1,11 @@
-package com.ebuild.practicespringaop.practice.SpringAopTest;
+package com.ebuild.practicespringaop.practice.ch05_spring_aop;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import com.ebuild.practicespringaop.practice.ch05_spring_aop.business.UserLoginService;
 import com.ebuild.practicespringaop.practice.ch05_spring_aop.business.UserRepository;
-import com.ebuild.practicespringaop.practice.ch05_spring_aop.sub02_pointcut_seperation.SeperatedPointcutAspect;
-import com.ebuild.practicespringaop.practice.ch05_spring_aop.sub03_multi_advice.TransactionAspect;
+import com.ebuild.practicespringaop.practice.ch05_spring_aop.sub03_multi_advice.TransactionFirstAspect;
 import org.junit.jupiter.api.Test;
 import org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator;
 import org.springframework.aop.support.AopUtils;
@@ -14,12 +13,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest(classes = {
-    TransactionAspect.class
+    TransactionFirstAspect.DoTransaction.class
+    , TransactionFirstAspect.DoLog.class
     , UserLoginService.class
     , UserRepository.class
     , AnnotationAwareAspectJAutoProxyCreator.class
 })
-public class TransactionAspectTest {
+public class TransactionFirstAspectTest {
 
   @Autowired
   private UserLoginService userLoginService;

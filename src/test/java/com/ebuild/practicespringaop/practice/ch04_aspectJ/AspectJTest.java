@@ -1,4 +1,4 @@
-package com.ebuild.practicespringaop.practice;
+package com.ebuild.practicespringaop.practice.ch04_aspectJ;
 
 import com.ebuild.practicespringaop.practice.ch04_aspectJ.AspectJConfig;
 import com.ebuild.practicespringaop.practice.ch04_aspectJ.BusinessApp;

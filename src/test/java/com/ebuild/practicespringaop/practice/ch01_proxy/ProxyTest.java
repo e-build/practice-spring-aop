@@ -1,4 +1,4 @@
-package com.ebuild.practicespringaop.practice;
+package com.ebuild.practicespringaop.practice.ch01_proxy;
 
 
 import com.ebuild.practicespringaop.practice.ch01_proxy.Client;

@@ -1,4 +1,4 @@
-package com.ebuild.practicespringaop.practice;
+package com.ebuild.practicespringaop.practice.ch03_spring_proxy;
 
 import com.ebuild.practicespringaop.practice.ch03_spring_proxy.proxy_factory.ProxyFactoryConfig;
 import com.ebuild.practicespringaop.practice.ch03_spring_proxy.proxy_factory.TargetClass;

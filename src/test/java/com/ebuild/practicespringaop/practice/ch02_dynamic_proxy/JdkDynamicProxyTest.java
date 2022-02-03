@@ -1,4 +1,4 @@
-package com.ebuild.practicespringaop.practice;
+package com.ebuild.practicespringaop.practice.ch02_dynamic_proxy;
 
 import com.ebuild.practicespringaop.practice.ch02_dynamic_proxy.jdkdynamic.AImpl;
 import com.ebuild.practicespringaop.practice.ch02_dynamic_proxy.jdkdynamic.AInterface;
