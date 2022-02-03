@@ -9,6 +9,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class InternalCallServiceV2 {
 
+  /**
+   * ObjectProvider 를 주입받아서 메서드가 호출되는 시점에 객체를 주입받고 내부메서드 호출
+   */
+
   private ObjectProvider<InternalCallServiceV2> objectProvider;
 
   public InternalCallServiceV2(ObjectProvider<InternalCallServiceV2> objectProvider) {

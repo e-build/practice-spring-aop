@@ -1,12 +1,17 @@
 package com.ebuild.practicespringaop.practice.ch06_precautions.sub01_call_internall;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+
 
 @Slf4j
 @Service
 public class InternalCallServiceV1 {
+
+  /**
+   * 수정자 주입으로 자기자신을 주입받아서 internal 메서드 호출 TODO: 작동 안함. 순환참조 발생
+   */
 
   private InternalCallServiceV1 internalCallServiceV1;
 
