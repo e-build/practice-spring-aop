@@ -1,10 +1,10 @@
 package com.ebuild.practicespringaop.practice;
 
-import com.ebuild.designpattern.post_processor.AutoProxyCreatorConfig;
-import com.ebuild.designpattern.post_processor.NormalBeanA;
-import com.ebuild.designpattern.post_processor.NormalBeanB;
-import com.ebuild.designpattern.post_processor.NormalBeanConfig;
-import com.ebuild.designpattern.post_processor.PostProcessorBeanConfig;
+import com.ebuild.practicespringaop.practice.ch03_spring_proxy.post_processor.AutoProxyCreatorConfig;
+import com.ebuild.practicespringaop.practice.ch03_spring_proxy.post_processor.NormalBeanA;
+import com.ebuild.practicespringaop.practice.ch03_spring_proxy.post_processor.NormalBeanB;
+import com.ebuild.practicespringaop.practice.ch03_spring_proxy.post_processor.NormalBeanConfig;
+import com.ebuild.practicespringaop.practice.ch03_spring_proxy.post_processor.PostProcessorBeanConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,6 @@ import org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProx
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Slf4j
 public class PostProcessorTest {
@@ -34,7 +33,8 @@ public class PostProcessorTest {
   @Test
   void postProcessorBeanConfigTest(){
     // given
-    ApplicationContext applicationContext = new AnnotationConfigApplicationContext(PostProcessorBeanConfig.class);
+    ApplicationContext applicationContext = new AnnotationConfigApplicationContext(
+        PostProcessorBeanConfig.class);
 
     // when
     NormalBeanB normalBeanB = applicationContext.getBean("normalBeanA", NormalBeanB.class);
@@ -43,7 +43,8 @@ public class PostProcessorTest {
 
   @Test
   void autoProxyCreatorConfigTest(){
-    ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AutoProxyCreatorConfig.class, AnnotationAwareAspectJAutoProxyCreator.class);
+    ApplicationContext applicationContext = new AnnotationConfigApplicationContext(
+        AutoProxyCreatorConfig.class, AnnotationAwareAspectJAutoProxyCreator.class);
     NormalBeanA normalBeanA = applicationContext.getBean("normalBeanA", NormalBeanA.class);
     NormalBeanB normalBeanB = new NormalBeanB();
 

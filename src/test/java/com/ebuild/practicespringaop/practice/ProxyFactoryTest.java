@@ -1,8 +1,8 @@
 package com.ebuild.practicespringaop.practice;
 
-import com.ebuild.designpattern.dynamic_proxy.proxy_factory.ProxyFactoryConfig;
-import com.ebuild.designpattern.dynamic_proxy.proxy_factory.TargetClass;
-import com.ebuild.designpattern.dynamic_proxy.proxy_factory.TargetInterface;
+import com.ebuild.practicespringaop.practice.ch03_spring_proxy.proxy_factory.ProxyFactoryConfig;
+import com.ebuild.practicespringaop.practice.ch03_spring_proxy.proxy_factory.TargetClass;
+import com.ebuild.practicespringaop.practice.ch03_spring_proxy.proxy_factory.TargetInterface;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

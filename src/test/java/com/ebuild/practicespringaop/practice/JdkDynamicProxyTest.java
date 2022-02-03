@@ -1,10 +1,10 @@
 package com.ebuild.practicespringaop.practice;
 
-import com.ebuild.designpattern.dynamic_proxy.jdkdynamic.AImpl;
-import com.ebuild.designpattern.dynamic_proxy.jdkdynamic.AInterface;
-import com.ebuild.designpattern.dynamic_proxy.jdkdynamic.BImpl;
-import com.ebuild.designpattern.dynamic_proxy.jdkdynamic.BInterface;
-import com.ebuild.designpattern.dynamic_proxy.jdkdynamic.TimeInvocationHandler;
+import com.ebuild.practicespringaop.practice.ch02_dynamic_proxy.jdkdynamic.AImpl;
+import com.ebuild.practicespringaop.practice.ch02_dynamic_proxy.jdkdynamic.AInterface;
+import com.ebuild.practicespringaop.practice.ch02_dynamic_proxy.jdkdynamic.BImpl;
+import com.ebuild.practicespringaop.practice.ch02_dynamic_proxy.jdkdynamic.BInterface;
+import com.ebuild.practicespringaop.practice.ch02_dynamic_proxy.jdkdynamic.TimeInvocationHandler;
 import java.lang.reflect.Proxy;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;

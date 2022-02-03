@@ -1,7 +1,7 @@
 package com.ebuild.practicespringaop.practice;
 
-import com.ebuild.designpattern.dynamic_proxy.cglib.ConcreteService;
-import com.ebuild.designpattern.dynamic_proxy.cglib.TimeMethodInterceptor;
+import com.ebuild.practicespringaop.practice.ch02_dynamic_proxy.cglib.ConcreteService;
+import com.ebuild.practicespringaop.practice.ch02_dynamic_proxy.cglib.TimeMethodInterceptor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.cglib.proxy.Enhancer;
