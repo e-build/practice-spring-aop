@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Configuration;
 public class PostProcessorBeanConfig {
 
   @Bean
-  public NormalBeanA normalBeanA(){
-    return new NormalBeanA();
+  public NormalBeanAA normalBeanAA(){
+    return new NormalBeanAA();
   }
 
   @Bean
@@ -24,7 +24,7 @@ public class PostProcessorBeanConfig {
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-      if (beanName.equals("normalBeanA"))
+      if (beanName.equals("normalBeanAA"))
         return new NormalBeanB();
 
       return bean;

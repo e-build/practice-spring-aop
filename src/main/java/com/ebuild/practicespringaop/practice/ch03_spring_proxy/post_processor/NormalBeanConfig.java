@@ -11,6 +11,4 @@ public class NormalBeanConfig {
     return new NormalBeanA();
   }
 
-
-
 }
