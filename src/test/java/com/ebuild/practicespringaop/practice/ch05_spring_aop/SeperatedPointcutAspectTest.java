@@ -1,4 +1,4 @@
-package com.ebuild.practicespringaop.practice.SpringAopTest;
+package com.ebuild.practicespringaop.practice.ch05_spring_aop;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
